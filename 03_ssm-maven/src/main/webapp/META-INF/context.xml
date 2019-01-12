@@ -1,0 +1,14 @@
+<!-- tomcat数据源JNDI -->
+<Context>
+ <Resource name="jdbc/dataSourceM"
+       auth="Container"
+       type="javax.sql.DataSource"
+       driverClassName="com.mysql.jdbc.Driver"
+       url="jdbc:mysql://127.0.0.1:3306/db_ssmMaven?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true"
+       username="root"
+       password="root"
+       maxActive="100"
+       maxIdle="30"
+       maxWait="10000"
+    logAbandoned="true" />
+</Context>
